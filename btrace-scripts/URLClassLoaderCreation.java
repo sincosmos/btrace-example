@@ -27,7 +27,7 @@ public class URLClassLoaderCreation {
 			method = "<init>")
 	public static void onInit(@Self Object thisObject) {
 		if (compare(name(classOf(thisObject)), "java.net.URLClassLoader")) {
-			String stackTrace = jstackStr(6);
+			String stackTrace = jstackStr(12);
 			AtomicInteger counter = get(histo, stackTrace);
 			if (counter == null) {
 				counter = newAtomicInteger(1);
