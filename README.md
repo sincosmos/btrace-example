@@ -32,6 +32,11 @@ Example usage:
 export JAVA_OPTS="$(./print_jvm_opts.sh)"
 ```
 
+Use for Gradle daemon:
+```
+export GRADLE_OPTS="-Dorg.gradle.jvmargs='$(./print_jvm_opts.sh)'"
+```
+
 ## btrace documentation
 
 * [btrace project's wiki](https://github.com/btraceio/btrace/wiki)
