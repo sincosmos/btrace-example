@@ -6,7 +6,7 @@ import static com.sun.btrace.BTraceUtils.Strings.str;
 
 @BTrace
 public class BtraceProbe {
-    @OnMethod(clazz = "com.weibo.ad.bp.superfans.configcenter.controller.ValidationController",
+    @OnMethod(clazz = "com.sincosmos.configcenter.controller.ValidationController",
     method = "validateTestData", location = @Location(Kind.RETURN))
     public static void targetMethod(@Self Object self, String input, @Return AnyType result, @Duration long time){
         BTraceUtils.println();
